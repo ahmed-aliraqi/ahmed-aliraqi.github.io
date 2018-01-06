@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<!-- Start Navbar -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Laravel</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Guest links -->
+                <li>
+                    <a href="./login.html" class="padding-20">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                    </a>
+                </li>
+                <li>
+                    <a href="./register.html" class="padding-20">
+                        <i class="fa fa-user-plus" aria-hidden="true"></i> Register
+                    </a>
+                </li>
+                <!-- /Guest links -->
+
+                <!-- User Dropdown -->
+                <li class="dropdown user-dropdown">
+                    <a href="#" class="dropdown-toggle user-dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                        Ahmed Fathy
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user fa-fw fa-lg"></i> Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user-o fa-fw fa-lg"></i> Edit Profile
+                            </a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-sign-out fa-fw fa-lg"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- /User Dropdown -->
+
+                <!-- User Notifications -->
+                <li class="dropdown notification-dropdown">
+                    <a href="#" class="dropdown-toggle padding-20" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">
+                        <span class="label label-danger notifications-count">1</span>
+                        <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu min-width-300">
+                        <li>
+                            <div class="notify-wrap">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a href="#">
+                                            <img data-src="holder.js/50x50" class="img img-circle">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="notify-text">
+                                            <small class="notify-date text-muted">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                3 hours ago
+                                            </small>
+                                            <a href="#">
+                                                <h4>Ahmed Fathy</h4>
+                                            </a>
+                                            <span>Added new comment on your post</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="notify-wrap">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <a href="#">
+                                            <img data-src="holder.js/50x50" class="img img-circle">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <div class="notify-text">
+                                            <small class="notify-date text-muted">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                3 hours ago
+                                            </small>
+                                            <a href="#">
+                                                <h4>Ahmed Fathy</h4>
+                                            </a>
+                                            <span>Added new comment on your post</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <!-- /User Notifications -->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!-- End Navbar -->
+
+
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-3">
+            <!-- User info -->
+            <div class="panel panel-default">
+                <div class="panel-body center-vertical">
+                    <img data-src="holder.js/100x100" class="img img-circle">
+
+                </div>
+                <h3 class="text-center">Ahmed Fathy</h3>
+                <h5 class="text-center">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    aliraqi.dev@gmail.com
+                </h5>
+                <h5 class="text-center">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    123456789
+                </h5>
+            </div>
+            <!-- /User info-->
+
+
+            <!-- All Users -->
+            <h4 class="text-center">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                All Users
+            </h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">
+                        <img data-src="holder.js/50x50" class="img img-circle">
+                    </a>
+                    <a href="#">
+                        Ahmed Fathy
+                    </a>
+                </li>
+
+            </ul>
+            <!-- /All Users -->
+        </div>
+
+        <!-- User Posts -->
+        <div class="col-md-9">
+            <div class="panel panel-default user-post-panel">
+
+                <div class="panel-heading">
+                    <div class="row">
+                        <img data-src="holder.js/50x50" class="img user-avatar img-circle pull-left">
+
+                        <div class="pull-left">
+                            <h4 class="user-name ">Ahmed Fathy</h4>
+                            <small class="text-muted">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                2 hours ago
+                            </small>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Post content-->
+                <div class="panel-body">
+                    <img data-src="holder.js/800x300" class="img img-responsive">
+                    <br>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                </div>
+                <!-- /Post content-->
+
+                <div class="panel-footer">
+                    <!-- Like Button -->
+                    <span class="like-btn">
+                        <small class="text-muted likes">20</small>
+                        <a href="#" class="btn-btn-primary">
+                            <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </span>
+                    <!-- /Like Button -->
+
+                    <!-- Dislike Button -->
+                    <span class="like-btn">
+                        <small class="text-muted likes">3</small>
+                        <a href="#" class="btn-btn-primary">
+                            <i class="fa fa-thumbs-o-down fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </span>
+                    <hr>
+                    <!-- Dislike comment form -->
+
+                    <!-- Add comment form -->
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img img-circle" data-src="holder.js/50x50" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <form action="">
+                                <textarea name="" id="" class="form-control"></textarea>
+                                <br>
+                                <button class="btn btn-primary pull-right">Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /Add comment form -->
+                    <hr>
+
+                    <!-- Comments -->
+                    <div class="comments">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img img-circle" data-src="holder.js/50x50" alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href="#">Khaled</a>
+                                    <small class="text-muted pull-right">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2 hours ago
+                                    </small>
+                                </h4>
+
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy
+                                </p>
+                                <!-- Like Button -->
+                                <span class="like-btn">
+                                <small class="text-muted likes">20</small>
+                                <a href="#" class="btn-btn-primary">
+                                    <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                                <!-- /Like Button -->
+                                <!-- Dislike Button -->
+                                <span class="like-btn">
+                                <small class="text-muted likes">3</small>
+                                <a href="#" class="btn-btn-primary">
+                                    <i class="fa fa-thumbs-o-down fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                                <!-- Dislike comment form -->
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object img img-circle" data-src="holder.js/50x50" alt="">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href="#">Khaled</a>
+                                    <small class="text-muted pull-right">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        2 hours ago
+                                    </small>
+                                </h4>
+
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has
+                                    been the industry's standard dummy
+                                </p>
+                                <!-- Like Button -->
+                                <span class="like-btn">
+                                <small class="text-muted likes">20</small>
+                                <a href="#" class="btn-btn-primary">
+                                    <i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                                <!-- /Like Button -->
+                                <!-- Dislike Button -->
+                                <span class="like-btn">
+                                <small class="text-muted likes">3</small>
+                                <a href="#" class="btn-btn-primary">
+                                    <i class="fa fa-thumbs-o-down fa-lg" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                                <!-- Dislike comment form -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Comments -->
+
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /Pagination -->
+        </div>
+        <!-- /User Posts -->
+
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
