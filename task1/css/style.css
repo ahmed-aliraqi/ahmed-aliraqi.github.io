@@ -50,28 +50,39 @@
 .notification-dropdown li:last-child {
     border-bottom: 0px;
 }
+
 .center-vertical {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.user-post-panel .panel-heading{
+
+.user-post-panel .panel-heading {
     padding: 10px 15px;
 }
 
-.user-post-panel .panel-heading .user-avatar{
+.user-post-panel .panel-heading .user-avatar {
     margin: 0 8px;
 }
 
-.user-post-panel .panel-heading .user-name{
+.user-post-panel .panel-heading .user-name {
     margin: 5px 0px;
 }
-.like-btn{
+
+.like-btn {
     margin-left: 10px;
 }
-.comments .media{
+
+.comments .media {
     padding: 5px 0;
 }
+
 .login-container {
     min-width: 500px;
+}
+
+.upload-label img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
 }
