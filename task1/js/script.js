@@ -1,5 +1,5 @@
 (function ($) {
-    $(document).on('change', 'input#input-image', function (event) {
+    $(document).on('change', 'input.input-image', function (event) {
         event.preventDefault();
         var reader = new FileReader();
 

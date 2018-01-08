@@ -81,8 +81,14 @@
     min-width: 500px;
 }
 
-.upload-label img{
+.upload-label img {
     width: 100px;
     height: 100px;
     cursor: pointer;
+}
+
+.post-control .dropdown-menu {
+    left: auto;
+    top: 85%;
+    right: 10px;
 }
